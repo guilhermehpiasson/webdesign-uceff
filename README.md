@@ -1,16 +1,19 @@
 # webdesign-uceff
 
+Tutorial baseado nos seguintes passos principais
 
-## 1. Clonar o repositório
-Dentro de uma pasta dispare o comando abaixo
+## 1. Configurar o Ambiente Node.js
+Crie uma pasta para o projeto e inicialize um novo projeto Node.js.
 ```bash
-git clone https://github.com/guilhermehpiasson/webdesign-uceff.git
+mkdir webseign-uceff-unidadeIII
+cd webseign-uceff-unidadeIII
+npm init -y
 ```
 
 ## 2. Instalar Dependências
 Instale as dependências necessárias usando NPM.
 ```bash
-npm install 
+npm install express body-parser soap mysql2
 ```
 
 ## 3. Configurar o Servidor Express
@@ -77,20 +80,7 @@ let dadosCEP = result.return;
 ```
 
 ## 7. Inserir Dados no MySQL
-Insira os dados recebidos na tabela `CEP_VALIDADOS`.
-```javascript
-// Continuação do callback
-let query = 'INSERT INTO CEP_VALIDADOS (cep, endereco, bairro, cidade, uf) VALUES (?, ?, ?, ?, ?)';
-let valores = [dadosCEP.cep, dadosCEP.end, dadosCEP.bairro, dadosCEP.cidade, dadosCEP.uf];
-
-connection.query(query, valores, (err, results) => {
-  if (err) {
-    res.status(500).send(err);
-    return;
-  }
-  res.send('CEP validado e inserido com sucesso!');
-});
-```
+Insira os dados recebidos na tabela `ENDERECOS`.
 
 ## 8. Testar a API
 Inicie o servidor e teste a API com um cliente como o Postman.
