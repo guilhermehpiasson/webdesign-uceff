@@ -10,7 +10,7 @@ Para executar esse projeto precisamos ter alguns softwares disponíveis em nossa
 3. Visual Studio Code - https://code.visualstudio.com/download
 
 
-Os passos a seguir servem de referencia para a elaboração do projeto:
+Os passos a seguir servem de referência para a elaboração do projeto:
 
 ## 1. Configurar o Ambiente Node.js
 Crie uma pasta para o projeto e inicialize um novo projeto Node.js.
