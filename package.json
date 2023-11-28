@@ -1,5 +1,5 @@
 {
-  "name": "rodent-api",
+  "name": "webdesign-uceff",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guilhermehpiasson/rodent-api.git"
+    "url": "git+https://github.com/guilhermehpiasson/webdesign-uceff.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/guilhermehpiasson/rodent-api/issues"
+    "url": "https://github.com/guilhermehpiasson/webdesign-uceff/issues"
   },
-  "homepage": "https://github.com/guilhermehpiasson/rodent-api#readme"
+  "homepage": "https://github.com/guilhermehpiasson/webdesign-uceff#readme"
 }

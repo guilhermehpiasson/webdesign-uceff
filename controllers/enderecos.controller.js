@@ -16,7 +16,7 @@ exports.consultaCEP = async (req, res, next) => {
     }
 };
 
-exports.consultaEnderecos = async (req, res, next) => {
+exports.consultaCidades = async (req, res, next) => {
   try {
     const enderecos = await ENDERECOS.findAll({
       raw: true,
