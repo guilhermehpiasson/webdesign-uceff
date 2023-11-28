@@ -20,7 +20,7 @@ exports.consultaCidades = async (req, res, next) => {
   try {
     const enderecos = await ENDERECOS.findAll({
       raw: true,
-       attributes: ['ID', 'CIDADE'],
+      attributes: ['ID', 'CIDADE'],
       order: [['CIDADE', 'ASC']]
     });
 

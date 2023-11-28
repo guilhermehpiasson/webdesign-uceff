@@ -4,9 +4,8 @@ module.exports = app => {
     const router = require("express").Router();
 
     router.get('/enderecos/cidades', enderecosController.consultaCidades)
+    router.get('/enderecos/consulta-cep/:cep', enderecosController.consultaCEP)
     router.post('/enderecos/consulta-cep', enderecosController.consultaCEP)
 
-    router.get('/consulta-cep/:cep', enderecosController.consultaCEP);
-
-    app.use('/api', router);
+    app.use('/api', router)
 }
