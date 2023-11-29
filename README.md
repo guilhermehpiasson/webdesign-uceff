@@ -13,18 +13,23 @@ Para executar esse projeto precisamos ter alguns softwares disponíveis em nossa
 Os passos a seguir servem de referência para a elaboração do projeto:
 
 ## 1. Configurar o Ambiente Node.js
-Crie uma pasta para o projeto e inicialize um novo projeto Node.js.
+Efetue o clone do repositório
 ```bash
-mkdir webseign-uceff-unidadeIII
-cd webseign-uceff-unidadeIII
-npm init -y
+git clone https://github.com/guilhermehpiasson/webdesign-uceff.git
 ```
 
-## 2. Instalar Dependências
-Instale as dependências necessárias usando NPM.
+## 2. Instalar Dependências e subir aplicação
+Instale as dependências necessárias usando NPM dentro do diretório do projeto o qual foi clonado.
 ```bash
-npm install express body-parser soap mysql2
+npm install
 ```
+
+Após instalar as dependencias starte o projeto
+```bash
+npm start
+```
+As etapas abaixo referem-se a etapas para a concepção do projeto, já as anteriores servem mais para baixar o projeto base, instalar as dependências e "startar" o projeto para testar as APIs.
+
 
 ## 3. Configurar o Servidor Express
 Crie um arquivo `server.js` para configurar o servidor Express.
