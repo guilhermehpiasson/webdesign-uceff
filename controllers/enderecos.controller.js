@@ -52,6 +52,15 @@ const url = 'https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService/At
 exports.consultaCEP = async (req, res, next) => {
     try {
         const cep = req.params.cep;
+
+        // Verificar se o CEP existe na base de endereços
+        const enderecoExistente = await ENDERECOS.findOne({where: { CEP: cep }});
+
+        if (enderecoExistente) {
+            // Se o CEP existe no banco de dados, retornar os dados existentes
+            return res.status(200).json(enderecoExistente);
+        }
+
         soap.createClient(url, (err, client) => {
             if (err) {
                 console.error(err);
